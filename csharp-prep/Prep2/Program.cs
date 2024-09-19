@@ -53,6 +53,14 @@ class Program
         }
 
 
-        
+        if (parsedNumber >=70)
+        {
+            Console.WriteLine("Congradulations! You passed.");
+        }
+        else
+        {
+            Console.WriteLine("Sorry, you didn't pass. Just know that we are never");
+            Console.WriteLine("stuck in one spot. You can try again!");
+        }
     }
 }
