@@ -22,6 +22,7 @@ class Program
     // B >= 80
     // C >= 70
     // D >= 60
+    // F > 60
 
         
         Console.Write("What is your score? ");
@@ -38,5 +39,20 @@ class Program
         {
             Console.WriteLine("You got a B");
         }
+        else if (parsedNumber >= 70)
+        {
+            Console.WriteLine("You got a C");
+        }
+        else if (parsedNumber >= 60)
+        {
+            Console.WriteLine("You got a D");
+        }
+        else
+        {
+            Console.WriteLine("You got a F");
+        }
+
+
+        
     }
 }
