@@ -5,6 +5,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        Console.WriteLine("");
         // starting with the title, made the list
         Console.WriteLine("Enter a list of numbers, type 0 when finished.");
         List<int> numberLis = new List<int>();
@@ -44,12 +45,14 @@ class Program
                 maximumNumber = number;
             }
         }
+        Console.WriteLine("");
         // typing out the sum, the average, and the largest number
         Console.WriteLine($"The sum is: {numberAdded}");
         // Console.WriteLine(numberOfThings);
         float average = numberAdded/numberOfThings;
         Console.WriteLine($"The average is: {average}");
         Console.WriteLine($"The largest number is: {maximumNumber}");
+        Console.WriteLine("");
 
     }
 }
