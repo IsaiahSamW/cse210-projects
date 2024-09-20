@@ -14,12 +14,12 @@ class Program
         string userName = PromptUserName();
 
         
-        
+        // displays message
         static void DisplayWelcome()
         {
             Console.WriteLine("Welcome to the program!");
         }
-        
+
         static string PromptUserName();
         {
             Console.Write("Please enter your name: ");
