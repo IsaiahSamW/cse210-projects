@@ -16,7 +16,7 @@ class Program
 
         int squared = SquareNumber(userNumber);
 
-        // string results = DisplayResult();
+        DisplayResult(userName, squared);
         
         // displays message
         static void DisplayWelcome()
@@ -51,5 +51,10 @@ class Program
             return numberSquared;
         }
 
+        // gets name and number and puts them into a sentence
+        static void DisplayResult(string name, int number)
+        {
+            Console.WriteLine($"{name}, your number squared is {number}");
+        }
     }
 }
