@@ -4,15 +4,19 @@ class Program
 {
     static void Main(string[] args)
     {
-    // DisplayWelcome - Displays the message, "Welcome to the Program!"
-    // PromptUserName - Asks for and returns the user's name (as a string)
-    // PromptUserNumber - Asks for and returns the user's favorite number (as an integer)
+   
+    
     // SquareNumber - Accepts an integer as a parameter and returns that number squared (as an integer)
     // DisplayResult - Accepts the user's name and the squared number and displays them.
         DisplayWelcome();
 
         string userName = PromptUserName();
 
+        int userNumber = PromptUserNumber();
+
+        int squared = SquareNumber(userNumber);
+
+        // string results = DisplayResult();
         
         // displays message
         static void DisplayWelcome()
@@ -20,17 +24,31 @@ class Program
             Console.WriteLine("Welcome to the program!");
         }
 
-        static string PromptUserName();
+        // asks for, recieves, and returns string name
+        static string PromptUserName()
         {
             Console.Write("Please enter your name: ");
             string name= Console.ReadLine();
 
-            return name
+            return name;
         }
 
-        static int PromptUserNumber();
+        // asks for, recieves, and returns int number
+        static int PromptUserNumber()
         {
+            Console.Write("What is your favorite number: ");
+            string number = Console.ReadLine();
+            int numberParsed = int.Parse(number);
 
+            return numberParsed;
+        }
+
+        // gets a number, squares it, and returns it
+        static int SquareNumber(int number)
+        {
+            int numberSquared = number * number;
+
+            return numberSquared;
         }
 
     }
