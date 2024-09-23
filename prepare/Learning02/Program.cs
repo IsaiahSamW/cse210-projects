@@ -20,13 +20,16 @@ class Program
         job2._endYear= 2024;
 
         // display jobs
-        job1.DisplayJobs();
-        job2.DisplayJobs();
+        // job1.DisplayJobs();
+        // job2.DisplayJobs();
 
         // started new class, Resume. Added "my" name, and added job1 and job2 to the list
         Resume myResume = new Resume();
         myResume._name = "Samuel Davidson";
         myResume._jobLis.Add(job1);
         myResume._jobLis.Add(job2);
+        
+        // Display the jobs things
+        myResume.DisplayResume();
     }
 }
