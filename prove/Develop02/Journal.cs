@@ -7,7 +7,7 @@ public class Journal
     
     public void AddEntry()
     {
-
+        
     }
     public void ShowMenu()
     {
@@ -30,6 +30,6 @@ public class Journal
 
     public void DisplayAll()
     {
-        
+
     }
 }

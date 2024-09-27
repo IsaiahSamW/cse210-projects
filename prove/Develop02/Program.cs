@@ -21,6 +21,13 @@ class Program
             string userAction = Console.ReadLine();
             userActionParsed = int.Parse(userAction);
             // Console.WriteLine(userActionParsed);
+            
+            // calling the write command
+            if (userActionParsed == 1)
+            {
+                
+            } 
+
         }
         while (userActionParsed !=5);
         
