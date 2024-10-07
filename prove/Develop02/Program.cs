@@ -21,13 +21,29 @@ class Program
             string userAction = Console.ReadLine();
             userActionParsed = int.Parse(userAction);
             // Console.WriteLine(userActionParsed);
-            
+             
             // calling the write command
             if (userActionParsed == 1)
             {
                 
             } 
+            else if (userActionParsed == 2)
+            {
 
+            }
+            else if (userActionParsed == 3)
+            {
+
+            }
+
+            else if (userActionParsed == 5)
+            {
+
+            }
+            else
+            {
+                Console.WriteLine("I do not understand what you're asking");
+            }
         }
         while (userActionParsed !=5);
         

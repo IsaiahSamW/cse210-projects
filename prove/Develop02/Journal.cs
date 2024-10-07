@@ -4,7 +4,8 @@ public class Journal
 {
     // list of entries
     public List<Entry> _entryLis = new List<Entry>();
-    
+     
+    // adding entry
     public void AddEntry()
     {
         
